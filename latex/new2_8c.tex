@@ -1,0 +1,181 @@
+\hypertarget{new2_8c}{\section{new2.\-c File Reference}
+\label{new2_8c}\index{new2.\-c@{new2.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}~50
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{new2_8c_a2048374d111e3c16bc176b15a1607b2f}{compare} (int arr\mbox{[}4\mbox{]})
+\item 
+void \hyperlink{new2_8c_ac567f094464ec6f154176ff1963da565}{sets} (int a\mbox{[}$\,$\mbox{]}, int K)
+\item 
+void \hyperlink{new2_8c_ae2ee59f7cc16ee42559c87e81c433039}{create} ()
+\item 
+int \hyperlink{new2_8c_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{new2_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count} =0
+\item 
+int \hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base} \mbox{[}4000000\mbox{]}\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{\index{new2.\-c@{new2.\-c}!number@{number}}
+\index{number@{number}!new2.c@{new2.\-c}}
+\subsubsection[{number}]{\setlength{\rightskip}{0pt plus 5cm}\#define number~50}}\label{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}
+
+
+\subsection{Function Documentation}
+\hypertarget{new2_8c_a2048374d111e3c16bc176b15a1607b2f}{\index{new2.\-c@{new2.\-c}!compare@{compare}}
+\index{compare@{compare}!new2.c@{new2.\-c}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}int compare (
+\begin{DoxyParamCaption}
+\item[{int}]{arr\mbox{[}4\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{new2_8c_a2048374d111e3c16bc176b15a1607b2f}
+
+\begin{DoxyCode}
+9 \{
+10     \textcolor{keywordtype}{int} i;
+11 
+12     \textcolor{keywordflow}{for}(i=0; i<\hyperlink{new2_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}; i++)
+13     \{
+14         \textcolor{keywordflow}{if}(\hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base}[i][0]==arr[0]&&\hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base}[i][1]==arr[1]&&\hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base}[i][2]==arr[2]&&
+      \hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base}[i][3]==arr[3])
+15             \textcolor{keywordflow}{return} 1;
+16     \}
+17 
+18     \textcolor{keywordflow}{for}(i=0; i<4; i++)
+19         \hyperlink{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{base}[count][i]=arr[i];
+20     count++;
+21     \textcolor{keywordflow}{return} 0;
+22 
+23 \}
+\end{DoxyCode}
+\hypertarget{new2_8c_ae2ee59f7cc16ee42559c87e81c433039}{\index{new2.\-c@{new2.\-c}!create@{create}}
+\index{create@{create}!new2.c@{new2.\-c}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{new2_8c_ae2ee59f7cc16ee42559c87e81c433039}
+
+\begin{DoxyCode}
+56 \{
+57     \textcolor{keywordtype}{int} b[4],action;
+58     \textcolor{keywordtype}{int} *a;
+59     a = (\textcolor{keywordtype}{int}*)malloc(\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}*\textcolor{keyword}{sizeof}(\textcolor{keywordtype}{int}));
+60     \textcolor{keywordtype}{int} i,j,k,l,K;
+61     \textcolor{keywordtype}{char} c;
+62     \textcolor{comment}{//for(i=0;i<number;i++)}
+63     \textcolor{comment}{//  scanf("%d%c",&a[i],&c);}
+64     srand (time(NULL));
+65     \textcolor{keywordflow}{for}(i=0; i<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; i++)
+66     \{
+67         a[i]= (int)pow(-1,rand()%2)*(rand() % number + 1);
+68     \}
+69     \textcolor{keywordflow}{for}(i=0; i<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; i++)
+70         printf(\textcolor{stringliteral}{"%d,"},a[i]);
+71     scanf(\textcolor{stringliteral}{"%d"},&K);
+72     \textcolor{keywordflow}{for}(i=0; i<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; i++)
+73     \{
+74         b[0]=a[i];
+75         \textcolor{keywordflow}{for}(j=i+1; j<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; j++)
+76         \{
+77             b[1]=a[j];
+78             \textcolor{keywordflow}{for}(k=j+1; k<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; k++)
+79             \{
+80                 b[2]=a[k];
+81                 \textcolor{keywordflow}{for}(l=k+1; l<\hyperlink{new2_8c_aa97c1f529dc5a11a78758184c84a39c9}{number}; l++)
+82                 \{
+83                     b[3]=a[l];
+84                     \textcolor{comment}{//printf("%d %d %d %d\(\backslash\)n",b[0],b[1],b[2],b[3]);}
+85                     action = \hyperlink{new2_8c_a2048374d111e3c16bc176b15a1607b2f}{compare}(b);
+86                     \textcolor{keywordflow}{if}(action==0)
+87                         \hyperlink{new2_8c_ac567f094464ec6f154176ff1963da565}{sets}(b,K);
+88                 \}
+89             \}
+90         \}
+91     \}
+92 
+93 \}
+\end{DoxyCode}
+\hypertarget{new2_8c_a840291bc02cba5474a4cb46a9b9566fe}{\index{new2.\-c@{new2.\-c}!main@{main}}
+\index{main@{main}!new2.c@{new2.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{new2_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\begin{DoxyCode}
+96 \{
+97     \textcolor{keywordtype}{int} i,j;
+98     \hyperlink{new2_8c_ae2ee59f7cc16ee42559c87e81c433039}{create}();
+99     \textcolor{comment}{//printf("stored");}
+100     \textcolor{comment}{//for(i=0;i<count;i++)}
+101     \textcolor{comment}{//\{}
+102     \textcolor{comment}{//  for(j=0;j<4;j++)}
+103     \textcolor{comment}{//      printf("%d,",base[i][j]);}
+104     \textcolor{comment}{//  printf("\(\backslash\)n");}
+105     \textcolor{comment}{//\}}
+106     \textcolor{keywordflow}{return} 0;
+107 \}
+\end{DoxyCode}
+\hypertarget{new2_8c_ac567f094464ec6f154176ff1963da565}{\index{new2.\-c@{new2.\-c}!sets@{sets}}
+\index{sets@{sets}!new2.c@{new2.\-c}}
+\subsubsection[{sets}]{\setlength{\rightskip}{0pt plus 5cm}void sets (
+\begin{DoxyParamCaption}
+\item[{int}]{a\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{K}
+\end{DoxyParamCaption}
+)}}\label{new2_8c_ac567f094464ec6f154176ff1963da565}
+
+\begin{DoxyCode}
+26 \{
+27     \textcolor{keywordtype}{int} i,j,k,t,prod,temp[2];
+28     \textcolor{keywordflow}{for}(i=0; i<3; i++)
+29     \{
+30         \textcolor{keywordflow}{for}(j=i+1; j<4; j++)
+31         \{
+32             prod=1;
+33             t=0;
+34             \textcolor{keywordflow}{for}(k=0; k<4; k++)
+35             \{
+36                 \textcolor{keywordflow}{if}(k!=i&&k!=j)
+37                 \{
+38                     prod=prod*a[k];
+39                     temp[t]=k;
+40                     t++;
+41                 \}
+42             \}
+43             \textcolor{keywordflow}{if}(a[i]+a[j]+prod<= K)
+44             \{
+45                 \textcolor{comment}{//printf("%d,%d,%d,%d\(\backslash\)n",a[i],a[j],a[temp[0]],a[temp[1]]);}
+46                 \textcolor{comment}{//printf("%d,%d,%d,%d\(\backslash\)n",a[i],a[j],a[temp[1]],a[temp[0]]);}
+47                 \textcolor{comment}{//printf("%d,%d,%d,%d\(\backslash\)n",a[j],a[i],a[temp[0]],a[temp[1]]);}
+48                 \textcolor{comment}{//printf("%d,%d,%d,%d\(\backslash\)n",a[j],a[i],a[temp[1]],a[temp[0]]);}
+49             \}
+50         \}
+51     \}
+52 \}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}{\index{new2.\-c@{new2.\-c}!base@{base}}
+\index{base@{base}!new2.c@{new2.\-c}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}int base\mbox{[}4000000\mbox{]}\mbox{[}4\mbox{]}}}\label{new2_8c_adfaf5c718d3b59863f1aa5cc1f17ac9e}
+\hypertarget{new2_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}{\index{new2.\-c@{new2.\-c}!count@{count}}
+\index{count@{count}!new2.c@{new2.\-c}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int count =0}}\label{new2_8c_ad43c3812e6d13e0518d9f8b8f463ffcf}

@@ -1,0 +1,76 @@
+\begin{theindex}
+
+  \item {base}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{6}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{8}
+
+  \indexspace
+
+  \item {compare}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{5}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{7}
+  \item {count}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{6}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{8}
+  \item {create}
+    \subitem {new.\discretionary {-}{}{}c}, \hyperpage{3}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{5}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{7}
+    \subitem {new\discretionary {-}{}{}\_\discretionary {-}{}{}astyle.\discretionary {-}{}{}c}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {main}
+    \subitem {new.\discretionary {-}{}{}c}, \hyperpage{4}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{6}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{8}
+    \subitem {new\discretionary {-}{}{}\_\discretionary {-}{}{}astyle.\discretionary {-}{}{}c}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {new.\discretionary {-}{}{}c}, \hyperpage{3}
+    \subitem {create}, \hyperpage{3}
+    \subitem {main}, \hyperpage{4}
+    \subitem {number}, \hyperpage{3}
+    \subitem {sets}, \hyperpage{4}
+  \item {new2.\discretionary {-}{}{}c}, \hyperpage{4}
+    \subitem {base}, \hyperpage{6}
+    \subitem {compare}, \hyperpage{5}
+    \subitem {count}, \hyperpage{6}
+    \subitem {create}, \hyperpage{5}
+    \subitem {main}, \hyperpage{6}
+    \subitem {number}, \hyperpage{5}
+    \subitem {sets}, \hyperpage{6}
+  \item {new3.\discretionary {-}{}{}c}, \hyperpage{6}
+    \subitem {base}, \hyperpage{8}
+    \subitem {compare}, \hyperpage{7}
+    \subitem {count}, \hyperpage{8}
+    \subitem {create}, \hyperpage{7}
+    \subitem {main}, \hyperpage{8}
+    \subitem {number}, \hyperpage{7}
+    \subitem {sets}, \hyperpage{8}
+  \item {new\discretionary {-}{}{}\_\discretionary {-}{}{}astyle.\discretionary {-}{}{}c}, 
+		\hyperpage{9}
+    \subitem {create}, \hyperpage{9}
+    \subitem {main}, \hyperpage{9}
+    \subitem {number}, \hyperpage{9}
+    \subitem {sets}, \hyperpage{10}
+  \item {number}
+    \subitem {new.\discretionary {-}{}{}c}, \hyperpage{3}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{5}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{7}
+    \subitem {new\discretionary {-}{}{}\_\discretionary {-}{}{}astyle.\discretionary {-}{}{}c}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {sets}
+    \subitem {new.\discretionary {-}{}{}c}, \hyperpage{4}
+    \subitem {new2.\discretionary {-}{}{}c}, \hyperpage{6}
+    \subitem {new3.\discretionary {-}{}{}c}, \hyperpage{8}
+    \subitem {new\discretionary {-}{}{}\_\discretionary {-}{}{}astyle.\discretionary {-}{}{}c}, 
+		\hyperpage{10}
+
+\end{theindex}

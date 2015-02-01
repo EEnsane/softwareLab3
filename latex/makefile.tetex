@@ -1,0 +1,8 @@
+PACKAGE	= xtab
+
+TMPINPUTS=xtab.sty
+TMPDOC=xtab.dvi
+EXTRADOC=README
+
+include ../make.rules
+

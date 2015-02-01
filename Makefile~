@@ -1,0 +1,3 @@
+all:
+	gcc new3.c -lm -o new3
+
